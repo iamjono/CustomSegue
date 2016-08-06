@@ -28,7 +28,7 @@ public class SlideDownSegue: PresentWithAnimatorSegue {
     
     override init(identifier: String, source sourceController: AnyObject, destination destinationController: AnyObject) {
         super.init(identifier: identifier, source: sourceController, destination: destinationController)
-        (animator as? TransitionAnimator)?.transition = [.SlideDown, .Crossfade]
+        (animator as? TransitionAnimator)?.transition = [.slideDown, .crossfade]
     }
     
 }
@@ -38,7 +38,7 @@ public class SlideUpSegue: PresentWithAnimatorSegue {
     
     override init(identifier: String, source sourceController: AnyObject, destination destinationController: AnyObject) {
         super.init(identifier: identifier, source: sourceController, destination: destinationController)
-        (animator as? TransitionAnimator)?.transition = [.SlideUp, .Crossfade]
+        (animator as? TransitionAnimator)?.transition = [.slideUp, .crossfade]
     }
     
 }
@@ -48,7 +48,7 @@ public class SlideLeftSegue: PresentWithAnimatorSegue {
     
     override init(identifier: String, source sourceController: AnyObject, destination destinationController: AnyObject) {
         super.init(identifier: identifier, source: sourceController, destination: destinationController)
-        (animator as? TransitionAnimator)?.transition = [.SlideLeft, .Crossfade]
+        (animator as? TransitionAnimator)?.transition = [.slideLeft, .crossfade]
     }
     
 }
@@ -58,7 +58,7 @@ public class SlideRightSegue: PresentWithAnimatorSegue {
     
     override init(identifier: String, source sourceController: AnyObject, destination destinationController: AnyObject) {
         super.init(identifier: identifier, source: sourceController, destination: destinationController)
-        (animator as? TransitionAnimator)?.transition = [.SlideRight, .Crossfade]
+        (animator as? TransitionAnimator)?.transition = [.slideRight, .crossfade]
     }
     
 }
@@ -68,7 +68,7 @@ public class CrossfadeSegue: PresentWithAnimatorSegue {
     
     override init(identifier: String, source sourceController: AnyObject, destination destinationController: AnyObject) {
         super.init(identifier: identifier, source: sourceController, destination: destinationController)
-        (animator as? TransitionAnimator)?.transition = .Crossfade
+        (animator as? TransitionAnimator)?.transition = .crossfade
     }
     
 }
